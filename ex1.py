@@ -52,6 +52,20 @@ class Call:
         self._src = src
         self._dst = dst
         self._elev = elev
+    def __repr__(self):
+        return f""
+
+
+class Calls:
+    def __init__(self):
+        self._calls = []
+
+    def from_csv(self, filename):
+        with open(filename) as file:
+            csvreader = csv.reader(file)
+            for row in csvreader:
+                c = Call(time=row[1], src=row[2], dst=row[3], elev=row[5])
+                self._calls.append(c)
 
 
 building = input()
@@ -59,4 +73,7 @@ building = input()
 # output = input()
 b = Building()
 b.from_json(building)
+a=Calls()
+a.from_csv("Calls_a.csv")
+print(a._calls)
 print(b)
