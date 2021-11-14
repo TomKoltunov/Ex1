@@ -46,6 +46,14 @@ class Building:
         return f"minFloor: {self._minFloor},maxFloor: {self._maxFloor}, Elevators: {self._Elevators}"
 
 
+class Call:
+    def __init__(self, time, src, dst, elev):
+        self._time = time
+        self._src = src
+        self._dst = dst
+        self._elev = elev
+
+
 building = input()
 # calls = input()
 # output = input()
