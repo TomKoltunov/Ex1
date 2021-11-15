@@ -64,6 +64,7 @@ class Call:
         self.time = time
         self.src = src
         self.dst = dst
+        self.stat = 3
         self.elev = elev
 
     def __str__(self) -> str:
@@ -153,5 +154,3 @@ if __name__ == '__main__':
     with open(output, 'w', newline="") as file:
         csvwriter = csv.writer(file)
         csvwriter.writerows(new_calls)
-
-
