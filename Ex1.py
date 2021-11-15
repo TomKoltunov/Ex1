@@ -47,14 +47,17 @@ class Building:
 
 
 class Call:
-    def __init__(self, time, src, dst, elev):
+    def __init__(self, time, src, dst, elev) -> None:
         self._time = time
         self._src = src
         self._dst = dst
         self._elev = elev
-    def __repr__(self):
-        return f""
 
+    def __str__(self) -> str:
+        return f"Time:{self._time} Src:{self._src} Dst:{self._dst} Elev:{self._elev}"
+
+    def __repr__(self) -> str:
+        return self.__str__()
 
 class Calls:
     def __init__(self):
@@ -67,13 +70,14 @@ class Calls:
                 c = Call(time=row[1], src=row[2], dst=row[3], elev=row[5])
                 self._calls.append(c)
 
-
-building = input()
-# calls = input()
-# output = input()
-b = Building()
-b.from_json(building)
-a=Calls()
-a.from_csv("Calls_a.csv")
-print(a._calls)
-print(b)
+if __name__ == '__main__':
+    #building = input()
+    # calls = input()
+    # output = input()
+    Kriot = []
+    with open("Calls_a.csv") as file:
+        csvreader = csv.reader(file)
+        for row in csvreader:
+            c = Call(time=row[1], src=row[2], dst=row[3], elev=row[5])
+            Kriot.append(c)
+    print(Kriot)
