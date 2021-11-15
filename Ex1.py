@@ -59,13 +59,13 @@ class Building:
 
 
 class Call:
-    def __init__(self, time, src, dst, elev) -> None:
+    def __init__(self, time, src, dst) -> None:
         self.elevator = 'Elevator Call'
         self.time = time
         self.src = src
         self.dst = dst
         self.stat = 3
-        self.elev = elev
+        self.elev = 0
 
     def __str__(self) -> str:
         return f"Time:{self.time} Src:{self.src} Dst:{self.dst} Elev:{self.elev}"
@@ -82,7 +82,7 @@ class Calls:
         with open(filename) as file:
             csvreader = csv.reader(file)
             for row in csvreader:
-                c = Call(time=float(row[1]), src=int(row[2]), dst=int(row[3]), elev=int(row[5]))
+                c = Call(time=float(row[1]), src=int(row[2]), dst=int(row[3]))
                 self.calls.append(c)
 
 
@@ -118,35 +118,36 @@ if __name__ == '__main__':
             elevs[alloc].curr = i.src - (elevs[alloc].speed * dt)
         if i == 0:
             dt = 0
-        for j in elevs:
-            if j.status == 1:
-                if j.curr < i.src:
+        if i.src >= b.minFloor and i.src <= b.maxFloor and i.dst >= b.minFloor and i.dst <= b.maxFloor:
+            for j in elevs:
+                if j.status == 1:
+                    if j.curr < i.src:
+                        if calcTime(j, dt, i) < best_time:
+                            best_time = calcTime(j, dt, i)
+                            allocated = j
+                            j.status = 1
+                            alloc = a
+                elif j.status == -1:
+                    if j.curr > i.src:
+                        if calcTime(j, dt, i) < best_time:
+                            best_time = calcTime(j, dt, i)
+                            allocated = j
+                            j.status = -1
+                            alloc = a
+                elif j.status == 0:
                     if calcTime(j, dt, i) < best_time:
                         best_time = calcTime(j, dt, i)
                         allocated = j
-                        j.status = 1
                         alloc = a
-            elif j.status == -1:
-                if j.curr > i.src:
-                    if calcTime(j, dt, i) < best_time:
-                        best_time = calcTime(j, dt, i)
-                        allocated = j
-                        j.status = -1
-                        alloc = a
-            elif j.status == 0:
-                if calcTime(j, dt, i) < best_time:
-                    best_time = calcTime(j, dt, i)
-                    allocated = j
-                    alloc = a
-                    if i.src < j.curr:
-                        j.status = -1
-                    else:
-                        j.status = 1
-            a += 1
-        a = 0
-        t = i.time
-        i.elev = alloc
-        best_time = sys.float_info.max
+                        if i.src < j.curr:
+                            j.status = -1
+                        else:
+                            j.status = 1
+                a += 1
+            a = 0
+            t = i.time
+            i.elev = alloc
+            best_time = sys.float_info.max
 
     new_calls = []
     for i in call:
