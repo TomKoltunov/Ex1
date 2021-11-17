@@ -25,6 +25,10 @@ Building: A class that contains the features of each building: minimum and maxim
 
 We also used a function called calcTime that receives an elevator and a call and calculates the time it will take for the elevator to perform the call.
 
+UML-
+  ![uml](https://user-images.githubusercontent.com/93070344/142246276-b9d97855-7cf1-4e3e-9343-a0b46e474bb4.png)
+
+
 ### The main algorithm:
 Go through each and every call, for a call i go through all the elevators of the building and check the following:
 Calculate the current position of the elevator.
