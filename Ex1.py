@@ -5,8 +5,27 @@ import sys
 
 
 class Elevator:
+    """
+    This class represents an elevator in some building.
+    """
+
     def __init__(self, id: int, speed: float, minFloor: int, maxFloor: int, closeTime: float, openTime: float,
                  startTime: float, stopTime: float) -> None:
+        """
+        This is a constructor which creates "Elevator" object.
+        :param id: The id (serial number) of the Elevator, of an 'int' type.
+        :param speed: The speed of the Elevator while its moving between the call's source floor, of a 'float'
+                      type. This attribute is constant (the speed of the elevator does not change)
+        :param minFloor: The lowest floor the Elevator can reach (it's also the lowest floor of this Elevator's
+                         building), of an 'int' type.
+        :param maxFloor: The highest floor the Elevator can reach (it's also the highest floor of this Elevator's
+                         building), of an 'int' type.
+        :param closeTime: The time which takes to this Elevator to close its doors, of a 'float' type.
+        :param openTime: The time which takes to this Elevator to open its door, if a 'float' type.
+        :param startTime: The time which takes to this Elevator to start moving to its current call's source floor.
+        :param stopTime: The time which takes to this Elevator to stop moving when it reach to its current
+                         source floor.
+        """
         self.id = id
         self.speed = speed
         self.minFloor = minFloor
@@ -15,9 +34,11 @@ class Elevator:
         self.openTime = openTime
         self.startTime = startTime
         self.stopTime = stopTime
-        self.status = 0
-        self.curr = 0
-        self.q = []
+        self.status = 0  # When the program creates an 'Elevator' object, in that exact moment the status of the
+        # Elevator is 0 (means it does not move - "rest mode"). If the Elevator is moving
+        # upstairs - its status is 1. And when the Elevator is moving downstairs - its status if -1.
+        self.curr = 0  # This attribute gives us the current floor of the Elevator at each moment.
+        self.prev = 0  # This attribute gives us the previous floor of the Elevator at each moment.
 
     def __str__(self) -> str:
         return f"id: {self.id}, speed:{self.speed}, minFloor:{self.minFloor}, maxFloor:{self.maxFloor}, " \
@@ -60,6 +81,12 @@ class Building:
 
 class Call:
     def __init__(self, time, src, dst) -> None:
+        """
+
+        :param time:
+        :param src:
+        :param dst:
+        """
         self.elevator = 'Elevator Call'
         self.time = time
         self.src = src
@@ -82,7 +109,7 @@ class Calls:
         with open(filename) as file:
             csvreader = csv.reader(file)
             for row in csvreader:
-                c = Call(time=float(row[1]), src=int(row[2]), dst=int(row[3]))
+                c = Call(time=float(row[1]), src=int(row[2]), dst=int(row[3]))  # , elev=int(row[5]))
                 self.calls.append(c)
 
 
@@ -111,13 +138,20 @@ if __name__ == '__main__':
     t = 0
     a = 0
     alloc = 0
+    p = 0
     best_time = sys.float_info.max
     for i in call:
-        dt = t - i.time
+        dt = abs(i.time - t)
         if i != 0:
-            elevs[alloc].curr = i.src - (elevs[alloc].speed * dt)
-        if i == 0:
+            if elevs[alloc].status == 1:
+                elevs[alloc].curr = (elevs[alloc].speed * dt) + elevs[alloc].prev
+                elevs[alloc].prev = elevs[alloc].curr
+            elif elevs[alloc].status == -1:
+                elevs[alloc].curr = elevs[alloc].prev - (elevs[alloc].speed * dt)
+                elevs[alloc].prev = elevs[alloc].curr
+        if p == 0:
             dt = 0
+            p += 1
         if i.src >= b.minFloor and i.src <= b.maxFloor and i.dst >= b.minFloor and i.dst <= b.maxFloor:
             for j in elevs:
                 if j.status == 1:
@@ -143,7 +177,18 @@ if __name__ == '__main__':
                             j.status = -1
                         else:
                             j.status = 1
+                if j.status == 1 and j.curr > i.src:
+                    if i.dst < i.src:
+                        j.status = -1
+                    elif j.curr > i.dst:
+                        j.status = 0
+                elif j.status == -1 and j.curr < i.src:
+                    if i.dst > i.src:
+                        j.status = 1
+                    elif j.curr < i.dst:
+                        j.status = 0
                 a += 1
+
             a = 0
             t = i.time
             i.elev = alloc
