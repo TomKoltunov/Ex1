@@ -26,7 +26,7 @@ Elevator Call,142.0780896,-8,13,3,0
 Elevator Call,146.7629329,0,73,3,0
 Elevator Call,147.4439262,-7,67,3,0
 Elevator Call,151.6163013,-6,0,3,0
-Elevator Call,159.1776651,0,7,3,0
+Elevator Call,159.1776651,0,7,3,1
 Elevator Call,170.1571219,-6,51,3,0
 Elevator Call,173.2539258,62,87,3,0
 Elevator Call,174.9139487,-4,48,3,0
@@ -34,7 +34,7 @@ Elevator Call,177.914669,-2,10,3,0
 Elevator Call,179.4121157,-2,26,3,0
 Elevator Call,188.6936022,-6,-7,3,0
 Elevator Call,197.442433,-7,75,3,0
-Elevator Call,202.6306173,-2,0,3,0
+Elevator Call,202.6306173,-2,0,3,1
 Elevator Call,203.2352417,-8,38,3,0
 Elevator Call,209.3508155,27,-4,3,0
 Elevator Call,209.9785016,-3,4,3,0
@@ -151,7 +151,7 @@ Elevator Call,645.5114708,-1,44,3,0
 Elevator Call,647.6019129,-7,21,3,0
 Elevator Call,648.3122719,0,99,3,0
 Elevator Call,667.5999958,-8,-7,3,0
-Elevator Call,675.5144665,0,-1,3,1
+Elevator Call,675.5144665,0,-1,3,0
 Elevator Call,679.5895248,-7,10,3,0
 Elevator Call,680.0181347,0,56,3,0
 Elevator Call,680.2298063,-8,18,3,0
@@ -258,7 +258,7 @@ Elevator Call,1107.520886,16,-9,3,0
 Elevator Call,1107.803681,9,-4,3,0
 Elevator Call,1116.199471,98,-3,3,0
 Elevator Call,1117.344193,30,-1,3,0
-Elevator Call,1119.289652,-2,3,3,1
+Elevator Call,1119.289652,-2,3,3,0
 Elevator Call,1127.897553,-8,87,3,0
 Elevator Call,1129.148014,-3,0,3,0
 Elevator Call,1131.379218,-4,-6,3,0
@@ -271,15 +271,15 @@ Elevator Call,1147.540681,-9,34,3,0
 Elevator Call,1152.774369,64,-4,3,0
 Elevator Call,1157.405529,-9,87,3,0
 Elevator Call,1160.222251,20,64,3,0
-Elevator Call,1161.12852,-1,-2,3,1
+Elevator Call,1161.12852,-1,-2,3,0
 Elevator Call,1162.924896,-6,-5,3,0
 Elevator Call,1164.675592,-7,26,3,0
 Elevator Call,1170.902997,-4,24,3,0
 Elevator Call,1171.911689,-9,49,3,0
 Elevator Call,1176.099412,0,13,3,0
 Elevator Call,1179.610122,78,-2,3,0
-Elevator Call,1180.056382,-2,6,3,1
-Elevator Call,1180.977471,-1,-2,3,1
+Elevator Call,1180.056382,-2,6,3,0
+Elevator Call,1180.977471,-1,-2,3,0
 Elevator Call,1181.14349,-4,79,3,0
 Elevator Call,1182.485641,-7,31,3,0
 Elevator Call,1185.004929,28,-7,3,0
@@ -354,7 +354,7 @@ Elevator Call,1377.493688,1,-4,3,0
 Elevator Call,1386.291241,-6,48,3,0
 Elevator Call,1388.080947,-6,-8,3,0
 Elevator Call,1388.870423,63,-4,3,0
-Elevator Call,1392.39172,-1,-2,3,1
+Elevator Call,1392.39172,-1,-2,3,0
 Elevator Call,1396.825617,-1,92,3,0
 Elevator Call,1400.056881,-9,84,3,0
 Elevator Call,1400.141336,0,16,3,0
@@ -362,7 +362,7 @@ Elevator Call,1400.332505,-4,-7,3,0
 Elevator Call,1402.123737,55,-9,3,0
 Elevator Call,1403.016917,71,72,3,0
 Elevator Call,1405.11777,-4,-6,3,0
-Elevator Call,1407.498109,0,6,3,1
+Elevator Call,1407.498109,0,6,3,0
 Elevator Call,1412.288674,80,52,3,0
 Elevator Call,1413.020711,0,-7,3,0
 Elevator Call,1413.75081,-9,17,3,0
@@ -379,7 +379,7 @@ Elevator Call,1456.036356,-4,37,3,0
 Elevator Call,1457.25066,-5,58,3,0
 Elevator Call,1458.720727,15,-4,3,0
 Elevator Call,1460.217435,53,-7,3,0
-Elevator Call,1464.563308,6,0,3,1
+Elevator Call,1464.563308,6,0,3,0
 Elevator Call,1470.747509,6,14,3,0
 Elevator Call,1472.903915,-3,0,3,0
 Elevator Call,1472.926397,-9,20,3,0
@@ -400,7 +400,7 @@ Elevator Call,1512.71035,-7,-8,3,0
 Elevator Call,1513.281582,14,-5,3,0
 Elevator Call,1515.276254,-9,57,3,0
 Elevator Call,1516.90458,-3,17,3,0
-Elevator Call,1517.441031,-2,7,3,1
+Elevator Call,1517.441031,-2,7,3,0
 Elevator Call,1525.347465,-9,67,3,0
 Elevator Call,1528.783365,-8,66,3,0
 Elevator Call,1533.499355,71,-9,3,0
@@ -446,7 +446,7 @@ Elevator Call,1642.775039,-7,10,3,0
 Elevator Call,1644.574137,52,8,3,0
 Elevator Call,1646.806422,2,3,3,1
 Elevator Call,1651.811879,-3,100,3,0
-Elevator Call,1652.543662,0,-2,3,1
+Elevator Call,1652.543662,0,-2,3,0
 Elevator Call,1655.056199,0,33,3,0
 Elevator Call,1657.066046,86,34,3,0
 Elevator Call,1659.267827,10,27,3,0
@@ -490,7 +490,7 @@ Elevator Call,1751.821931,52,-3,3,0
 Elevator Call,1753.294068,35,0,3,0
 Elevator Call,1771.003102,91,0,3,0
 Elevator Call,1771.692448,-1,-3,3,0
-Elevator Call,1778.021055,0,2,3,1
+Elevator Call,1778.021055,0,2,3,0
 Elevator Call,1780.390234,-1,-4,3,0
 Elevator Call,1781.414023,29,0,3,0
 Elevator Call,1783.235146,-3,-1,3,0
@@ -502,7 +502,7 @@ Elevator Call,1797.310664,-8,-4,3,0
 Elevator Call,1801.704885,-1,13,3,0
 Elevator Call,1801.989954,-9,3,3,0
 Elevator Call,1803.43503,-9,40,3,0
-Elevator Call,1813.045498,3,-1,3,1
+Elevator Call,1813.045498,3,-1,3,0
 Elevator Call,1816.671009,0,-7,3,0
 Elevator Call,1831.362319,-7,-9,3,0
 Elevator Call,1832.629196,-1,-6,3,0
@@ -517,9 +517,9 @@ Elevator Call,1859.275589,91,-5,3,0
 Elevator Call,1861.801855,-6,8,3,0
 Elevator Call,1865.568705,-5,-3,3,0
 Elevator Call,1866.6531,-6,-7,3,0
-Elevator Call,1867.450676,-2,-1,3,1
+Elevator Call,1867.450676,-2,-1,3,0
 Elevator Call,1870.506223,35,0,3,0
-Elevator Call,1871.27138,0,-2,3,1
+Elevator Call,1871.27138,0,-2,3,0
 Elevator Call,1875.340473,-4,14,3,0
 Elevator Call,1882.339078,-8,21,3,0
 Elevator Call,1882.577484,0,-3,3,0
@@ -628,7 +628,7 @@ Elevator Call,2158.788625,-3,89,3,0
 Elevator Call,2159.671983,18,-5,3,0
 Elevator Call,2169.092846,-2,29,3,0
 Elevator Call,2176.554304,-6,-4,3,0
-Elevator Call,2179.555451,0,10,3,1
+Elevator Call,2179.555451,0,10,3,0
 Elevator Call,2196.756895,65,-4,3,0
 Elevator Call,2201.175939,-7,63,3,0
 Elevator Call,2206.353414,58,-4,3,0
@@ -637,7 +637,7 @@ Elevator Call,2209.267203,-3,-8,3,0
 Elevator Call,2210.749768,-8,23,3,0
 Elevator Call,2216.685627,94,-2,3,0
 Elevator Call,2219.23229,86,-1,3,0
-Elevator Call,2220.754005,2,-2,3,1
+Elevator Call,2220.754005,2,-2,3,0
 Elevator Call,2223.412421,6,-7,3,0
 Elevator Call,2227.620379,-6,-7,3,0
 Elevator Call,2229.338715,-3,-7,3,0
@@ -663,7 +663,7 @@ Elevator Call,2300.692762,0,96,3,0
 Elevator Call,2300.856361,82,-1,3,0
 Elevator Call,2304.326854,0,26,3,0
 Elevator Call,2312.520976,84,24,3,0
-Elevator Call,2312.727358,2,0,3,1
+Elevator Call,2312.727358,2,0,3,0
 Elevator Call,2317.148358,40,-7,3,0
 Elevator Call,2318.237604,-4,-7,3,0
 Elevator Call,2320.286064,52,0,3,0
@@ -692,9 +692,9 @@ Elevator Call,2398.917669,79,-3,3,0
 Elevator Call,2399.778892,-8,2,3,0
 Elevator Call,2407.547511,-8,-2,3,0
 Elevator Call,2407.695313,-6,-2,3,0
-Elevator Call,2409.135784,0,-1,3,1
+Elevator Call,2409.135784,0,-1,3,0
 Elevator Call,2409.932584,-9,-6,3,0
-Elevator Call,2415.078751,9,-1,3,1
+Elevator Call,2415.078751,9,-1,3,0
 Elevator Call,2417.806233,81,-8,3,0
 Elevator Call,2421.860188,23,-2,3,0
 Elevator Call,2427.443079,0,-3,3,0
@@ -735,7 +735,7 @@ Elevator Call,2541.256971,80,-7,3,0
 Elevator Call,2546.259941,63,15,3,0
 Elevator Call,2546.955571,-4,-9,3,0
 Elevator Call,2547.950338,-3,86,3,0
-Elevator Call,2548.361291,-1,-2,3,1
+Elevator Call,2548.361291,-1,-2,3,0
 Elevator Call,2549.673809,0,65,3,0
 Elevator Call,2550.080016,2,-8,3,0
 Elevator Call,2560.494081,95,-8,3,0
@@ -759,7 +759,7 @@ Elevator Call,2634.863545,0,-8,3,0
 Elevator Call,2637.335359,-7,-4,3,0
 Elevator Call,2637.923635,34,0,3,0
 Elevator Call,2639.635729,1,-7,3,0
-Elevator Call,2641.293534,1,0,3,1
+Elevator Call,2641.293534,1,0,3,0
 Elevator Call,2643.633797,33,-5,3,0
 Elevator Call,2643.825518,2,-4,3,0
 Elevator Call,2647.403126,-9,11,3,0
@@ -819,7 +819,7 @@ Elevator Call,2809.902598,42,-1,3,0
 Elevator Call,2812.905131,-1,-9,3,0
 Elevator Call,2816.487081,-5,39,3,0
 Elevator Call,2820.486751,32,-9,3,0
-Elevator Call,2825.241615,0,7,3,1
+Elevator Call,2825.241615,0,7,3,0
 Elevator Call,2825.39056,-8,54,3,0
 Elevator Call,2833.116707,-5,42,3,0
 Elevator Call,2837.578377,-3,50,3,0
@@ -831,7 +831,7 @@ Elevator Call,2861.613116,10,-3,3,0
 Elevator Call,2864.650766,-7,-1,3,0
 Elevator Call,2865.448204,59,-8,3,0
 Elevator Call,2866.575886,91,-9,3,0
-Elevator Call,2870.279989,5,-1,3,1
+Elevator Call,2870.279989,5,-1,3,0
 Elevator Call,2873.176479,-1,-6,3,0
 Elevator Call,2876.734795,11,0,3,0
 Elevator Call,2877.836875,61,-4,3,0
@@ -850,7 +850,7 @@ Elevator Call,2925.342912,4,-5,3,0
 Elevator Call,2930.192804,16,-8,3,0
 Elevator Call,2932.036794,0,-9,3,0
 Elevator Call,2940.164677,20,-5,3,0
-Elevator Call,2940.478837,2,0,3,1
+Elevator Call,2940.478837,2,0,3,0
 Elevator Call,2941.339945,21,-3,3,0
 Elevator Call,2951.40339,-4,93,3,0
 Elevator Call,2954.918257,76,-4,3,0
@@ -935,11 +935,11 @@ Elevator Call,3249.535999,32,-4,3,0
 Elevator Call,3253.191219,-4,-3,3,0
 Elevator Call,3255.804019,46,-1,3,0
 Elevator Call,3285.000234,58,40,3,0
-Elevator Call,3292.462087,0,-1,3,1
+Elevator Call,3292.462087,0,-1,3,0
 Elevator Call,3294.768278,30,-2,3,0
 Elevator Call,3296.689767,85,-4,3,0
-Elevator Call,3309.062436,-2,0,3,1
-Elevator Call,3323.659464,-1,0,3,1
+Elevator Call,3309.062436,-2,0,3,0
+Elevator Call,3323.659464,-1,0,3,0
 Elevator Call,3326.434327,45,34,3,0
 Elevator Call,3332.725419,-3,-6,3,0
 Elevator Call,3333.236344,0,93,3,0
@@ -960,7 +960,7 @@ Elevator Call,3404.667236,18,0,3,0
 Elevator Call,3406.427128,64,-9,3,0
 Elevator Call,3418.850556,37,-6,3,0
 Elevator Call,3421.142153,49,-2,3,0
-Elevator Call,3432.015018,-1,-2,3,1
+Elevator Call,3432.015018,-1,-2,3,0
 Elevator Call,3443.298161,0,-4,3,0
 Elevator Call,3444.440376,29,-6,3,0
 Elevator Call,3449.5545,-7,-6,3,0
@@ -990,7 +990,7 @@ Elevator Call,3534.064926,56,0,3,0
 Elevator Call,3537.825789,-4,0,3,0
 Elevator Call,3539.773236,58,-7,3,0
 Elevator Call,3546.241432,46,0,3,0
-Elevator Call,3556.76523,5,-2,3,1
+Elevator Call,3556.76523,5,-2,3,0
 Elevator Call,3560.31433,98,-4,3,0
 Elevator Call,3561.0016,89,22,3,0
 Elevator Call,3561.34219,54,-9,3,0
