@@ -1,4 +1,5 @@
 # Ex1 - Elevator allocation problem
+**Note** - The input files are in the 'Ex1_inputs' repository, and the output files are in the 'Logs' and output repository.
 ### The general idea of the algorithm:
 
 Given the following data: the number of calls of the elevator, the number of floors on which the calls was performed,
@@ -15,6 +16,8 @@ The current location of the elevator is calculated relative to the source floor 
 ​​* ElevatorSpeed ​​where src is the source floor, dt is the length of time elapsed from the previous reading and ElevatorSpeed ​​is the elevator speed.
 The calculation of the time to perform the reading of the elevator is calculated as follows:
 Total time = Door closing time + Door opening time + start time + Stop time + Time it will take for the elevator to get from the current location to the source + Time it will take the elevator to get from the source to the destination.
+##### Related works - 
+ https://towardsdatascience.com/elevator-optimization-in-python-73cab894ad30 https://www.geeksforgeeks.org/smart-elevator-pro-geek-cup
 
 ### Our algorithm and classes - 
 In our project we created classes for each object:
